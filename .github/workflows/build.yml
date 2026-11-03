@@ -31,6 +31,7 @@ jobs:
           sdk: given
           cli: latest
           target: ${{ matrix.config.target }}
+          combine: true
           configure-args: -DCMAKE_DISABLE_PRECOMPILE_HEADERS=ON
 
   package:
